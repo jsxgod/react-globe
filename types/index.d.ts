@@ -16,6 +16,8 @@ export interface Animation {
 
 export interface Callbacks {
   onClickMarker: MarkerCallback;
+  onTouchMarker: MarkerCallback;
+  onTouchMarker?: MarkerCallback;
   onDefocus: (previousFocus: Coordinates | null) => void;
   onGlobeBackgroundTextureLoaded: () => void;
   onGlobeCloudsTextureLoaded: () => void;
